@@ -1,5 +1,5 @@
 FROM alpine:3.17.3
-LABEL org.opencontainers.image.description Custom Lighttpd
+LABEL org.opencontainers.image.description "Custom Lighttpd"
 RUN  apk add lighttpd --no-cache 
 RUN  rm -rvf /var/cache/apk/* 
 RUN  rm -rvf /etc/lighttpd/* 
